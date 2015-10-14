@@ -21,7 +21,7 @@
             .stealthy_baguette {
                 position: fixed;
                 top: 100vh;
-                left: 100vw;
+                right: 100vw;
             }
         </style>
         <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -31,7 +31,12 @@
         <script type="text/javascript">
             function autorun()
             {
-            
+                setTimeout(function() {
+                    $(".stealthy_baguette").animate({
+                        top: "75vh",
+                        right: "75vw"
+                    }, 5000);
+                }, 5000);
             }
             if (document.addEventListener) document.addEventListener("DOMContentLoaded", autorun, false);
             else if (document.attachEvent) document.attachEvent("onreadystatechange", autorun);
@@ -43,7 +48,7 @@
         </div>
 
         <div class="stealthy_baguette">
-            <img src="http://i.imgur.com/39LTOP3.png">
+            <img src="http://i.kinja-img.com/gawker-media/image/upload/qpekjmk3y2ay9wtlfnmi.png">
         </div>
     </body>
 </html>
